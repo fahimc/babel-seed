@@ -14,8 +14,6 @@
 ----[Branches](#Branches)   
 ----[Launch Development Mode](#LaunchDevelopmentMode)    
 ----[Releasing Code](#ReleasingCode)   
-[Usage](#Usage)   
-----[API](#API)  
 
 ----------
 

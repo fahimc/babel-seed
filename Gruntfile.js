@@ -16,6 +16,12 @@ module.exports = function(grunt) {
         cwd: 'src/',
         src: ['**/*', '!js/**', '!style/**'],
         dest: 'dist/'
+      },
+      resource: {
+        expand: true,
+        cwd: 'src',
+        src: ['resource/**/*'],
+        dest: 'dist/'
       }
     },
     browserify: {
@@ -83,7 +89,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('dist', ['clean:dist', 'sass', 'copy:src', 'browserify']);
+  grunt.registerTask('dist', ['clean:dist','copy:resource', 'sass', 'copy:src', 'browserify']);
   grunt.registerTask('default', ['dist', 'connect', 'watch']);
 
 };
