@@ -158,7 +158,7 @@ vccp-dev merge-to-develop
 To release your code, use the following command:
 
 ```
-vccp-dev release [--prod | --uat]
+vccp-dev release --prod --keep
 ```
 
 ###Flags  
